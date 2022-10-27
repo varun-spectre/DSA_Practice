@@ -27,7 +27,7 @@ So we need to memoize and this becomes a DP problem
 We maintain a single array DP and if our target becomes zero then we have reached a solution if traveled via that recursion tree. So our base case is dp[0] = 1, and now for calculating target we have to calculate the how many way to get the combination sum for 1 to target-1. This is because basically our answer is sum(target - nums[0] , target - nums[2], ..., target - nums[n-1]) where n = len(nums). If still unclear, jus think in this way if target-nums[0] can be acheieved in x ways then then same number of ways we can also acheive target as we can simply add nums[0] to the target-nums[0] solution.
 
 Finally we have two for loops, one running from 1 to target and other running for all the numbers in the nums array.
-Check [a relative link](dynamic_programming/combinaiton_sum_4.py)
+Check out for code [link](dynamic_programming/combination_sum_4.py)
 </details>
 
 
