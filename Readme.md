@@ -30,7 +30,20 @@ Finally we have two for loops, one running from 1 to target and other running fo
 Check out for code [link](dynamic_programming/combination_sum_4.py)
 </details>
 
+<details>
+<summary>Oct 28</summary>
 
+[Dynamic_Programming]
+![](images/coin_change.png)
+
+We will use dynamic programming to solve this problem
+DP formulation ->  We will maintain a 2D array, rows could be the coins and columns would be the from 0 to amount. See the below picture for better understanding.
+![](images/coin_change_helper.png)
+
+Everytime we have two choices either to include that coin or leave that coin. So if we take that coin then we update dp[i][j] to be 1 + dp[i][j - present_coin_value], If we leave the coin then we update our dp[i][j] as dp[i-1][j] that is the minimum number of coins to get the amount if we dont have this coin.
+Check out for code [link](dynamic_programming/coin_change.py)
+
+</details>
 
 
 
