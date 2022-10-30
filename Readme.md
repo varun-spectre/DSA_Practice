@@ -45,6 +45,25 @@ Check out for code [link](dynamic_programming/coin_change.py)
 
 </details>
 
+<details>
+<summary>Oct 29</summary>
+I wasted this day, went to a shopping and pub. Happy Halloween :)
+</details>
+
+<details>
+<summary>Oct 30</summary>
+
+[Dynamic_Programming]
+![](images/longest_increasing_subsequence.png)
+
+DP again. This can be done in 2 ways. We can sort the array and find the longest common subsequence between them or we can do using a 1D array where we will store the max longest subsequence uptil that point which I think is more intuitive.
+DP formulation ->  We will maintain a 1D array, dp[i] indicates that longest increasing subsequence up to that index. So dp[1] would be 1 and for calculating dp[k] we will iterate the array from k-1 index to 0th index and for all the indexes which have value less than arr[k], we get the maximum of all those values in the dp array and that max values plus one would be our dp[k]
+dp[k] = max(dp[i...j]) where arr[i...j] < arr[k] and i..j < k
+
+Check out for code [link](dynamic_programming/coin_change.py)
+
+</details>
+
 
 
 
