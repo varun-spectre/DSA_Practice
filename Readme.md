@@ -60,7 +60,7 @@ DP again. This can be done in 2 ways. We can sort the array and find the longest
 DP formulation ->  We will maintain a 1D array, dp[i] indicates that longest increasing subsequence up to that index. So dp[1] would be 1 and for calculating dp[k] we will iterate the array from k-1 index to 0th index and for all the indexes which have value less than arr[k], we get the maximum of all those values in the dp array and that max values plus one would be our dp[k]
 dp[k] = max(dp[i...j]) where arr[i...j] < arr[k] and i..j < k
 
-Check out for code [link](dynamic_programming/coin_change.py)
+Check out for code [link](dynamic_programming/longest_increasing_subsequence.py)
 
 </details>
 
